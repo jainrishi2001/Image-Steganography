@@ -13,3 +13,9 @@ This LSB modification ensures that the changes made to the image are imperceptib
 6. The decryption process is the reverse of the encryption process. The stego shuffled image is first passed through the image shuffler to retrieve the original shuffled image.<br>
 7. The LSB of each pixel in the retrieved shuffled image is then extracted to obtain the ciphertext. This ciphertext is decrypted using the 3DES decryption algorithm and the same key that was used for encryption.<br>
 8. The decrypted message is now in plaintext form and can be read by the intended recipient.</p>
+<h2> Steps to use</h2>
+ You can directly start running the jupyter files with some minor changes to be done before that: <br>
+1. Install pycryptodome library to your system or virtual environment for running the project by running the command <br>
+<p align="center">pip3 install pycryptodome<br></p>
+2. Also change the path for the cover image according to your system and also the path where the other images should be created in the further steps.<br>
+3. The code will create new images at different steps as it proceeds and finally give a stego_image
